@@ -1,7 +1,7 @@
 URL_LINKEDIN = "https://www.linkedin.com/home"
 
 IMAGES = {
-    "connexion": "images/bouton_connexion.png",
+    "connexion": "images/connexion.png",
     "mon_compte": "images/mon_compte.png",
     "barre_recherche": "images/barre_de_recherche.png",
     "compte_connecte": "images/compte_connecte.png",

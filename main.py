@@ -32,7 +32,7 @@ def main():
     if click_on_image(IMAGES["barre_recherche"], timeout=10):
         copy_paste_search_query("Chasseur de tête Toulouse")
         if not click_on_image(IMAGES["filtre_personnes"], timeout=10):
-            print("❌ Filtre 'Personnes' introuvable.")
+            logger.error("❌ Filtre 'Personnes' introuvable.")
         else:
             time.sleep(3)  # attendre un peu le filtrage
 
@@ -47,13 +47,13 @@ def main():
             )
 
             if click_on_image(IMAGES["personne_suivant"], timeout=5):
-                print("➡️ Bouton 'personne suivant' cliqué. Passage à la page suivante...")
+                logger.info("➡️ Bouton 'personne suivant' cliqué. Passage à la page suivante...")
                 time.sleep(3)  # attendre le chargement de la nouvelle page
             else:
-                print("⛔️ Plus de page suivante trouvée.")
+                logger.info("⛔️ Plus de page suivante trouvée.")
                 break
     else:
-        print("❌ Barre de recherche introuvable.")
+        logger.error("❌ Barre de recherche introuvable.")
 
 if __name__ == "__main__":
     main()
