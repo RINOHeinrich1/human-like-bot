@@ -136,3 +136,22 @@
 2025-06-17 12:24:48,483 - WARNING - ❌ Non connecté après le délai imparti.
 2025-06-17 12:24:48,667 - INFO - Redirection vers la page de connexion email spécifique.
 2025-06-17 12:24:54,932 - INFO - Champ email préconfiguré détecté.
+2025-06-17 12:41:34,113 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:41:44,221 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:41:44,404 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:42:00,657 - INFO - Champ email non préconfiguré détecté.
+2025-06-17 12:42:02,209 - INFO - Champ mot de passe non préconfiguré détecté.
+2025-06-17 12:43:57,509 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:44:08,345 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:44:08,584 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:44:33,279 - INFO - Champ email non préconfiguré détecté.
+2025-06-17 12:44:34,966 - INFO - Champ mot de passe non préconfiguré détecté.
+2025-06-17 12:44:49,141 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:45:00,238 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:45:00,398 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:45:17,949 - INFO - Champ email non préconfiguré détecté.
+2025-06-17 12:45:28,577 - ERROR - Champ mot de passe non détecté.
+2025-06-17 12:46:26,818 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:46:37,611 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:46:37,788 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:46:43,976 - INFO - Champ email préconfiguré détecté.

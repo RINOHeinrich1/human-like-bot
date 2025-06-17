@@ -68,14 +68,9 @@ def main():
                     elif click_on_image(IMAGES.get("email_non_configuree"),10):
                         logger.info("Champ email non préconfiguré détecté.")
                         copy_paste(CREDENTIALS["email"])
+                        logger.info("Champ mot de passe non préconfiguré détecté.")
+                        copy_paste(CREDENTIALS["password"])
                         pyautogui.press("esc")
-                        if click_on_image(IMAGES.get("password_non_configuree"),10):
-                            logger.info("Champ mot de passe non préconfiguré détecté.")
-                            copy_paste(CREDENTIALS["password"])
-                            pyautogui.press("esc")
-                        else:
-                            logger.error("Champ mot de passe non détecté.")
-                        return
                     else:
                         logger.error("Champ email non détecté.")
                         return

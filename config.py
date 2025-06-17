@@ -1,7 +1,7 @@
 URL_LINKEDIN = "https://www.linkedin.com/home"
 
 CREDENTIALS = {
-    "email": "your_email",
+    "email": "it.specialist.gasca@gmail.com",
     "password": "yourpassword"
 }
 
