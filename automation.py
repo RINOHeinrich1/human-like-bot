@@ -32,6 +32,7 @@ def click_on_image(image_path, timeout=10, interval=0.5):
 
     print(f"❌ {image_path} non trouvé après {timeout} secondes.")
     return False
+
 def scroll_and_click_on_image(image_path, max_scrolls=20, scroll_amount=-300, interval=0.5):
     """
     Scrolle l'écran jusqu'à trouver et cliquer sur l'image. scroll_amount < 0 = vers le bas.
@@ -109,12 +110,13 @@ def type_search_query_with_keyboard(query):
     keyboard.press_and_release('enter')
     print("🔎 Recherche lancée.")
        
-def copy_paste_search_query(query):
+def copy_paste(query):
     print(f"⌨️ Taper la recherche (avec accents) : {query}")
     pyperclip.copy(query)  # Copie dans le presse-papier
     pyautogui.hotkey("ctrl", "v")  # Colle (pour Windows/Linux)
     pyautogui.press("enter")
     print("🔎 Recherche lancée.")
+
        
 def click_all_instances_of_image(image_path, confidence=0.8):
     """
@@ -149,7 +151,7 @@ def se_connecter_sans_note(
     limite_invitations_hebdomadaire_path,
     limite_invitation_mensuels_path,
     ok_limite_invitations_hebdomadaire,
-    max_scrolls=20,
+    max_scrolls=5,
     scroll_amount=-5,
     interval=0.5,
     confidence=0.8,
@@ -169,22 +171,11 @@ def se_connecter_sans_note(
     logger = setup_logger()  # ✅ appel au logger importé
 
     for i in range(max_scrolls):
-        # ✅ Vérifie si la limite mensuelle est atteinte
-        try:
-            limite_mensuelle_visible = pyautogui.locateOnScreen(limite_invitation_mensuels_path, confidence=confidence)
-        except Exception as e:
-            print(f"⚠️ Erreur locateOnScreen (limite mensuelle) : {e}")
-            limite_mensuelle_visible = None
-
-        if limite_mensuelle_visible:
-            logger.info("🚫 Limite mensuelle d'invitations détectée. Arrêt du script.")
-            print("🚫 Limite mensuelle détectée. Voir le log pour plus de détails.")
-            return  # Arrêt propre
         try:
             locations = list(pyautogui.locateAllOnScreen(image_connect_path, confidence=confidence))
         except Exception as e:
             print(f"⚠️ Erreur locateAllOnScreen : {e}")
-            locations = []
+            locations = [] 
 
         new_clicks = 0
         for location in locations:

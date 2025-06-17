@@ -18,3 +18,121 @@
 2025-06-17 09:43:50,800 - INFO - Déjà connecté.
 2025-06-17 09:45:09,037 - INFO - Vérification de l'état de connexion...
 2025-06-17 09:45:09,557 - INFO - Déjà connecté.
+2025-06-17 09:52:25,897 - INFO - Vérification de l'état de connexion...
+2025-06-17 09:52:26,536 - INFO - Déjà connecté.
+2025-06-17 09:55:02,050 - INFO - Vérification de l'état de connexion...
+2025-06-17 09:55:02,639 - INFO - Déjà connecté.
+2025-06-17 09:58:36,649 - INFO - Vérification de l'état de connexion...
+2025-06-17 09:58:37,206 - INFO - Déjà connecté.
+2025-06-17 09:59:12,757 - INFO - ⛔️ Plus de page suivante trouvée.
+2025-06-17 10:02:02,353 - INFO - Vérification de l'état de connexion...
+2025-06-17 10:02:03,070 - INFO - Déjà connecté.
+2025-06-17 10:02:38,738 - INFO - ⛔️ Plus de page suivante trouvée. Il se peut que votre limite mensuels soit atteint opter pour linkedin premium
+2025-06-17 10:09:20,653 - INFO - Vérification de l'état de connexion...
+2025-06-17 10:09:21,255 - INFO - Déjà connecté.
+2025-06-17 10:09:56,892 - INFO - ⛔️ Plus de page suivante trouvée. Il se peut que votre limite mensuels soit atteint opter pour linkedin premium
+2025-06-17 10:53:18,394 - INFO - Vérification de l'état de connexion...
+2025-06-17 10:53:18,820 - WARNING - Erreur détection connexion : 
+2025-06-17 10:53:18,965 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 10:53:45,370 - ERROR - ❌ Barre de recherche introuvable.
+2025-06-17 11:00:19,657 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:00:20,134 - WARNING - Erreur détection connexion : 
+2025-06-17 11:00:20,325 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:00:46,635 - ERROR - ❌ Barre de recherche introuvable.
+2025-06-17 11:18:28,719 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:18:29,354 - WARNING - Erreur détection connexion : 
+2025-06-17 11:18:29,541 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:18:36,016 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:20:36,937 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:20:37,390 - WARNING - Erreur détection connexion : 
+2025-06-17 11:20:37,584 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:20:43,774 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:27:10,143 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:27:10,642 - WARNING - Erreur détection connexion : 
+2025-06-17 11:27:10,783 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:27:17,041 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:27:39,269 - ERROR - Champ mot de passe non détecté.
+2025-06-17 11:30:19,503 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:30:19,956 - WARNING - Erreur détection connexion : 
+2025-06-17 11:30:20,148 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:32:06,872 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:32:07,278 - WARNING - Erreur détection connexion : 
+2025-06-17 11:32:07,415 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:32:13,610 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:33:33,941 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:33:34,387 - WARNING - Erreur détection connexion : 
+2025-06-17 11:33:34,525 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:33:40,703 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:34:18,557 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:34:19,230 - INFO - Déjà connecté.
+2025-06-17 11:34:32,693 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:34:33,130 - WARNING - Erreur détection connexion : 
+2025-06-17 11:34:33,267 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:34:39,459 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:36:28,051 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:36:28,451 - WARNING - Erreur détection connexion : 
+2025-06-17 11:36:28,588 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:36:34,773 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:39:05,089 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:39:05,529 - WARNING - Erreur détection connexion : 
+2025-06-17 11:39:05,668 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:39:11,943 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:40:40,086 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:40:40,890 - INFO - Déjà connecté.
+2025-06-17 11:40:51,463 - ERROR - Bouton connexion non détecté.
+2025-06-17 11:43:45,847 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:43:46,362 - WARNING - Erreur détection connexion : 
+2025-06-17 11:43:46,501 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:43:52,662 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:44:14,152 - ERROR - Connexion échouée.
+2025-06-17 11:54:57,121 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:54:57,699 - INFO - Déjà connecté.
+2025-06-17 11:56:19,593 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:56:20,007 - WARNING - Erreur détection connexion : 
+2025-06-17 11:56:20,145 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:56:26,347 - INFO - Champ email préconfiguré détecté.
+2025-06-17 11:57:07,235 - INFO - ⛔️ Plus de page suivante trouvée. Il se peut que votre limite mensuels soit atteint opter pour linkedin premium
+2025-06-17 11:58:27,986 - INFO - Vérification de l'état de connexion...
+2025-06-17 11:58:29,138 - WARNING - Erreur détection connexion : 
+2025-06-17 11:58:29,512 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 11:58:55,580 - ERROR - Champ email non détecté.
+2025-06-17 12:02:16,257 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:02:21,516 - INFO - ✅ Déjà connecté.
+2025-06-17 12:02:58,420 - INFO - ⛔️ Plus de page suivante trouvée. Il se peut que votre limite mensuels soit atteint opter pour linkedin premium
+2025-06-17 12:03:44,509 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:03:45,126 - INFO - ✅ Déjà connecté.
+2025-06-17 12:05:01,285 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:05:12,116 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:05:12,300 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:05:18,537 - INFO - Champ email préconfiguré détecté.
+2025-06-17 12:05:34,933 - ERROR - ❌ Barre de recherche introuvable.
+2025-06-17 12:06:25,369 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:06:36,072 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:06:36,216 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:06:42,404 - INFO - Champ email préconfiguré détecté.
+2025-06-17 12:09:06,041 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:09:16,057 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:09:16,241 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:09:22,437 - INFO - Champ email préconfiguré détecté.
+2025-06-17 12:09:38,732 - ERROR - ❌ Barre de recherche introuvable.
+2025-06-17 12:11:01,021 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:11:42,569 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:11:53,229 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:11:53,418 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:11:59,621 - INFO - Champ email préconfiguré détecté.
+2025-06-17 12:13:41,393 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:13:52,218 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:13:52,449 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:13:58,635 - INFO - Champ email préconfiguré détecté.
+2025-06-17 12:14:42,181 - INFO - ⛔️ Plus de page suivante trouvée. Il se peut que votre limite mensuels soit atteint opter pour linkedin premium
+2025-06-17 12:17:37,206 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:17:37,838 - INFO - ✅ Déjà connecté.
+2025-06-17 12:23:34,573 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:23:45,410 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:23:45,594 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:23:51,827 - INFO - Champ email préconfiguré détecté.
+2025-06-17 12:24:08,803 - ERROR - ❌ Barre de recherche introuvable.
+2025-06-17 12:24:37,629 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:24:48,483 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:24:48,667 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:24:54,932 - INFO - Champ email préconfiguré détecté.
