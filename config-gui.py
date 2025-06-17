@@ -184,7 +184,7 @@ class ConfigCaptureApp:
         self.config["SEARCH_QUERY"] = search_query
 
         with open(CONFIG_FILE, "w") as f:
-            f.write(f'URL_LINKEDIN = "{url}"\n\n')
+            f.write(f'URL_LINKEDIN = "{url}"\n\nn')
             f.write("CREDENTIALS = {\n")
             f.write(f'    "email": "{email}",\n')
             f.write(f'    "password": "{password}"\n')
