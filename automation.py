@@ -1,7 +1,9 @@
+from logger import setup_logger
 import time
 import pyautogui
 import keyboard
 import pyperclip
+
 def click_on_image(image_path, timeout=10, interval=0.5):
     """
     Attend dynamiquement l'apparition de l'image jusqu'à timeout (en secondes).
@@ -140,10 +142,12 @@ def click_all_instances_of_image(image_path, confidence=0.8):
 
     print(f"✅ {count} bouton(s) 'Se connecter' cliqué(s).")
     return count
+
 def se_connecter_sans_note(
     image_connect_path,
     image_envoyer_path,
     limite_invitations_hebdomadaire_path,
+    limite_invitation_mensuels_path,
     ok_limite_invitations_hebdomadaire,
     max_scrolls=20,
     scroll_amount=-5,
@@ -162,8 +166,20 @@ def se_connecter_sans_note(
     clicked_positions = set()
     total_connect_clicked = 0
     total_envoyer_clicked = 0
+    logger = setup_logger()  # ✅ appel au logger importé
 
     for i in range(max_scrolls):
+        # ✅ Vérifie si la limite mensuelle est atteinte
+        try:
+            limite_mensuelle_visible = pyautogui.locateOnScreen(limite_invitation_mensuels_path, confidence=confidence)
+        except Exception as e:
+            print(f"⚠️ Erreur locateOnScreen (limite mensuelle) : {e}")
+            limite_mensuelle_visible = None
+
+        if limite_mensuelle_visible:
+            logger.info("🚫 Limite mensuelle d'invitations détectée. Arrêt du script.")
+            print("🚫 Limite mensuelle détectée. Voir le log pour plus de détails.")
+            return  # Arrêt propre
         try:
             locations = list(pyautogui.locateAllOnScreen(image_connect_path, confidence=confidence))
         except Exception as e:
@@ -184,8 +200,13 @@ def se_connecter_sans_note(
                 print(f"✅ 'Se connecter' cliqué à {pos_key}")
                 time.sleep(2)  # attendre que la popup se charge
 
-                # Vérifie si la limite est atteinte
-                limite_visible = pyautogui.locateOnScreen(limite_invitations_hebdomadaire_path, confidence=confidence)
+                # Vérifie si la limite est atteinte (gestion d'erreur ajoutée ici)
+                try:
+                    limite_visible = pyautogui.locateOnScreen(limite_invitations_hebdomadaire_path, confidence=confidence)
+                except Exception as e:
+                    print(f"⚠️ Erreur locateOnScreen (limite invitations) : {e}")
+                    limite_visible = None
+
                 if limite_visible:
                     print("⚠️ Limite d'invitations atteinte détectée.")
                     if click_on_image(ok_limite_invitations_hebdomadaire, timeout=5):

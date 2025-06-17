@@ -10,5 +10,6 @@ IMAGES = {
     "envoyer_sans_note": "images/envoyer_sans_note.png",
     "personne_suivant": "images/personne_suivant.png",
     "limite_invitations_hebdo": "images/limite_invitations_hebdomadaire.png",
+    "limite_invitations_mensuels": "images/limite_invitation_mensuels.png",
     "ok_limite": "images/ok_limite_invitations_hebdomadaire.png"
 }

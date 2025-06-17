@@ -17,6 +17,7 @@ IMAGE_KEYS = [
     "envoyer_sans_note",
     "personne_suivant",
     "limite_invitations_hebdo",
+    "limite_invitations_mensuels",
     "ok_limite"
 ]
 

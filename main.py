@@ -42,6 +42,7 @@ def main():
                 IMAGES["se_connecter"],
                 IMAGES["envoyer_sans_note"],
                 IMAGES["limite_invitations_hebdo"],
+                IMAGES["limite_invitations_mensuels"],
                 IMAGES["ok_limite"],
                 interval=3
             )
