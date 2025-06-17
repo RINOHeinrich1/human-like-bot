@@ -167,3 +167,8 @@
 2025-06-17 12:50:30,030 - ERROR - ❌ Barre de recherche introuvable.
 2025-06-17 14:29:34,209 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
 2025-06-17 14:29:34,845 - INFO - ✅ Déjà connecté.
+2025-06-17 15:46:00,577 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 15:46:01,737 - INFO - ✅ Déjà connecté.
+2025-06-17 16:51:01,599 - ERROR - Erreur lors de l'ouverture de Chrome : [Errno 13] Permission denied: '/app'
+2025-06-17 16:51:08,485 - ERROR - Erreur lors de l'ouverture de Chrome : [Errno 13] Permission denied: '/app'
+2025-06-17 16:51:41,624 - ERROR - Erreur lors de l'ouverture de Chrome : [Errno 13] Permission denied: '/app'

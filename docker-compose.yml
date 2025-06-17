@@ -5,9 +5,16 @@ services:
       dockerfile: Dockerfile
     container_name: linkedin-bot
     volumes:
-      - ./config.py:/app/config.py          # Lien direct vers le fichier config modifié par ton GUI
-      - ./images:/app/images                # Lien direct vers les images capturées
+      - ./config.py:/app/config.py
+      - ./images:/app/images
+      - ./chrome-profile:/app/chrome-profile
     environment:
-      - DISPLAY=${DISPLAY}
-    network_mode: host                      # Nécessaire si tu veux que le conteneur accède à l'affichage local
-    ipc: host                               # Requis pour certains outils GUI ou pyautogui
+      - DISPLAY=:99
+    ports:
+      - "5900:5900"
+    # command: >
+    #   /bin/sh -c "Xvfb :99 -screen 0 1920x1080x24 & 
+    #               python3 main.py"
+    # Optionnel — retirer network_mode et ipc si tu n'as pas besoin de l'affichage local externe
+    network_mode: host
+    ipc: host

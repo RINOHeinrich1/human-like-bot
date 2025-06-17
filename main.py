@@ -4,7 +4,8 @@ from automation import *
 from logger import setup_logger
 import time
 import pyautogui
-import webbrowser
+import os
+os.environ['DISPLAY'] = ':99'
 
 logger = setup_logger()
 
@@ -51,7 +52,7 @@ def main():
     if not verifier_connexion():
             # Rediriger vers la bonne URL si EMAIL_LOGIN est True
                 if EMAIL_LOGIN:
-                    webbrowser.open("https://www.linkedin.com/checkpoint/lg/sign-in-another-account")
+                    open_chrome_with_url("https://www.linkedin.com/login/fr")#normalement çà: "https://www.linkedin.com/checkpoint/lg/sign-in-another-account"
                     logger.info("Redirection vers la page de connexion email spécifique.")
                     time.sleep(5)  # laisse le temps de charger la page
 

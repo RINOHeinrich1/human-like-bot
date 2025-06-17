@@ -4,6 +4,7 @@ FROM python:3.10-slim
 RUN apt-get update && apt-get install -y \
     xvfb \
     x11-utils \
+    x11vnc \
     x11-xserver-utils \
     scrot \
     wmctrl \
@@ -24,6 +25,7 @@ RUN apt-get update && apt-get install -y \
     fonts-liberation \
     wget \
     curl \
+    gnome-screenshot \
     unzip \
     && rm -rf /var/lib/apt/lists/*
 
@@ -44,4 +46,9 @@ WORKDIR /app
 ENV DISPLAY=:99
 
 # Commande d’entrée
-CMD ["sh", "-c", "Xvfb :99 -screen 0 1920x1080x24 & python3 main.py"]
+CMD sh -c "\
+  Xvfb :99 -screen 0 1366x768x24 & \
+  x11vnc -display :99 -nopw -forever -shared & \
+  python3 main.py"
+
+
