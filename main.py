@@ -1,5 +1,5 @@
 from browser import open_chrome_with_url
-from config import IMAGES, URL_LINKEDIN,CREDENTIALS,MAX_SCROLL,EMAIL_LOGIN,SEARCH_FILTER
+from config import IMAGES, URL_LINKEDIN,CREDENTIALS,MAX_SCROLL,EMAIL_LOGIN,SEARCH_QUERY
 from automation import *
 from logger import setup_logger
 import time
@@ -88,7 +88,7 @@ def main():
                         return
 
     if click_on_image(IMAGES["barre_recherche"], timeout=10):
-        copy_paste(SEARCH_FILTER)
+        copy_paste(SEARCH_QUERY)
         if not click_on_image(IMAGES["filtre_personnes"], timeout=10):
             logger.error("❌ Filtre 'Personnes' introuvable.")
         else:
