@@ -160,3 +160,8 @@
 2025-06-17 12:47:51,883 - INFO - Redirection vers la page de connexion email spécifique.
 2025-06-17 12:47:58,081 - INFO - Champ email préconfiguré détecté.
 2025-06-17 12:48:17,783 - ERROR - ❌ Barre de recherche introuvable.
+2025-06-17 12:49:54,639 - INFO - ⏳ Vérification de l'état de connexion pendant maximum 10 secondes...
+2025-06-17 12:50:04,642 - WARNING - ❌ Non connecté après le délai imparti.
+2025-06-17 12:50:04,819 - INFO - Redirection vers la page de connexion email spécifique.
+2025-06-17 12:50:11,005 - INFO - Champ email préconfiguré détecté.
+2025-06-17 12:50:30,030 - ERROR - ❌ Barre de recherche introuvable.

@@ -9,7 +9,7 @@ MAX_SCROLL = 5
 
 EMAIL_LOGIN = True
 
-SEARCH_FILTER = "CEO France"
+SEARCH_QUERY = "Développeur web python"
 
 IMAGES = {
     "connexion": "images/connexion.png",

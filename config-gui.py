@@ -184,16 +184,15 @@ class ConfigCaptureApp:
         self.config["SEARCH_QUERY"] = search_query
 
         with open(CONFIG_FILE, "w") as f:
-            f.write(f'URL_LINKEDIN = "{url}"\n\nn')
+            f.write(f'URL_LINKEDIN = "{url}"\n\n')
             f.write("CREDENTIALS = {\n")
             f.write(f'    "email": "{email}",\n')
             f.write(f'    "password": "{password}"\n')
             f.write("}\n\n")
             f.write(f"MAX_SCROLL = {max_scroll}\n\n")
             f.write(f"EMAIL_LOGIN = {self.config['EMAIL_LOGIN']}\n\n")
-            f.write("IMAGES = {\n")
             f.write(f'SEARCH_QUERY = "{search_query}"\n\n')
-
+            f.write("IMAGES = {\n")
             for k, v in self.config.get("IMAGES", {}).items():
                 f.write(f'    "{k}": "{v}",\n')
             f.write("}\n")
