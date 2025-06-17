@@ -5,6 +5,7 @@ from logger import setup_logger
 import time
 import pyautogui
 import webbrowser
+
 logger = setup_logger()
 
 def verifier_connexion(timeout=10, interval=0.5):

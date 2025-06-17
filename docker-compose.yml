@@ -1,0 +1,13 @@
+services:
+  linkedin-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: linkedin-bot
+    volumes:
+      - ./config.py:/app/config.py          # Lien direct vers le fichier config modifié par ton GUI
+      - ./images:/app/images                # Lien direct vers les images capturées
+    environment:
+      - DISPLAY=${DISPLAY}
+    network_mode: host                      # Nécessaire si tu veux que le conteneur accède à l'affichage local
+    ipc: host                               # Requis pour certains outils GUI ou pyautogui

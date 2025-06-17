@@ -19,6 +19,8 @@ RUN apt-get update && apt-get install -y \
     libatk-bridge2.0-0 \
     libgtk-3-0 \
     libasound2 \
+    python3-tk \
+    python3-dev \
     fonts-liberation \
     wget \
     curl \

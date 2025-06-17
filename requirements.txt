@@ -1,4 +1,6 @@
 pyautogui
 pyperclip
 Pillow
+python-xlib
 opencv-python
+keyboard
