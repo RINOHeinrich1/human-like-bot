@@ -1,7 +1,7 @@
 URL_LINKEDIN = "https://www.linkedin.com/home"
 
 CREDENTIALS = {
-    "email": "it.specialist.gasca@gmail.com",
+    "email": "your@email",
     "password": "yourpassword"
 }
 
@@ -9,7 +9,7 @@ MAX_SCROLL = 5
 
 EMAIL_LOGIN = True
 
-SEARCH_QUERY = "Développeur web python"
+SEARCH_QUERY = "CEO France"
 
 IMAGES = {
     "connexion": "images/connexion.png",

@@ -9,6 +9,7 @@ os.environ['DISPLAY'] = ':99'
 
 logger = setup_logger()
 
+
 def verifier_connexion(timeout=10, interval=0.5):
     """
     Vérifie la présence de l'image 'compte_connecte' à l'écran avec un timeout.
@@ -30,6 +31,7 @@ def verifier_connexion(timeout=10, interval=0.5):
             location = None
         except Exception as e:
             logger.warning(f"❌ Erreur pendant locateOnScreen : {e}")
+            print(f"❌ Erreur pendant locateOnScreen : {e}")
             location = None
 
         if location:
@@ -48,7 +50,8 @@ def verifier_connexion(timeout=10, interval=0.5):
 url = "https://www.linkedin.com/home"
 def main():
     open_chrome_with_url(URL_LINKEDIN)
-    time.sleep(5)
+    time.sleep(10)
+    take_screenshot()
     if not verifier_connexion():
             # Rediriger vers la bonne URL si EMAIL_LOGIN est True
                 if EMAIL_LOGIN:
@@ -120,3 +123,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    time.sleep(3000)

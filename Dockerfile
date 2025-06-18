@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     scrot \
     wmctrl \
     libx11-6 \
+    fluxbox \
     libx11-dev \
     libxcomposite-dev \
     libxcursor-dev \
@@ -25,9 +26,20 @@ RUN apt-get update && apt-get install -y \
     fonts-liberation \
     wget \
     curl \
+    xclip \
     gnome-screenshot \
     unzip \
     && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        fonts-liberation \
+        fonts-dejavu \
+        fonts-freefont-otf \
+        fonts-noto-core \
+        fonts-noto-cjk \
+        fonts-noto-mono \
+        fonts-noto-color-emoji && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Installer Google Chrome
 RUN curl -sSL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o chrome.deb && \
@@ -48,7 +60,8 @@ ENV DISPLAY=:99
 # Commande d’entrée
 CMD sh -c "\
   Xvfb :99 -screen 0 1366x768x24 & \
-  x11vnc -display :99 -nopw -forever -shared & \
+  fluxbox & \
+  x11vnc -noxdamage -xdamage -display  :99 -nopw -forever -shared & \
   python3 main.py"
 
 

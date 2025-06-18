@@ -3,6 +3,20 @@ import time
 import pyautogui
 import keyboard
 import pyperclip
+import os
+from datetime import datetime
+def take_screenshot():
+    logger = setup_logger()
+    try:
+        os.makedirs("screenshots", exist_ok=True)
+        filename = f"screenshots/screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+        screenshot = pyautogui.screenshot()
+        screenshot.save(filename)
+        logger.info(f"📸 Capture d'écran enregistrée dans {filename}")
+        print(f"📸 Capture d'écran enregistrée dans {filename}")
+    except Exception as e:
+        logger.error(f"❌ Erreur lors de la capture d'écran avec pyautogui : {e}")
+        print(f"❌ Erreur lors de la capture d'écran avec pyautogui : {e}")
 
 def click_on_image(image_path, timeout=10, interval=0.5):
     """
